@@ -975,7 +975,7 @@ function ProjectsSection() {
       title: "Nike React App",
       subtitle: "Dynamic E-Commerce Website",
       description:
-        "A visually stunning Nike-inspired website built with React and Tailwind CSS. Features responsive design, personalized user experience, and performance optimization that reflects the brand's commitment to innovation",
+        "A visually stunning Nike-inspired website built with React and Tailwind CSS. Features responsive design, personalized user experience, and performance optimization that reflects the brand's commitment to innovation and excellence.",
       tech: ["React", "Tailwind CSS"],
       features: [
         "Responsive Design",
