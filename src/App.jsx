@@ -255,14 +255,13 @@ function HeroSection({ isLoaded }) {
     }
   };
   const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/public/resume/Dhuvesh_resume.docx'; // Place your resume.pdf in the public folder
-    link.download = 'Dhuvesh_resume.docx'; // Custom filename for download
+    const link = document.createElement("a");
+    link.href = "/public/resume/Dhuvesh_resume.docx"; // Place your resume.pdf in the public folder
+    link.download = "Dhuvesh_resume.docx"; // Custom filename for download
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
-
 
   useEffect(() => {
     const currentWord = words[currentWordIndex];
@@ -357,33 +356,31 @@ function HeroSection({ isLoaded }) {
 
               {/* Tech Stack Pills */}
               <div className="flex flex-wrap gap-3">
-                {[
-                  "React",
-                  "Node.js",
-                  "MongoDB",
-                  "Express",
-                  "JavaScript",
-                  
-                ].map((tech, index) => (
-                  <div
-                    key={tech}
-                    className={`group flex items-center gap-3 px-5 py-3 bg-white/5 border border-white/20 rounded-2xl hover:bg-white/10 transition-all duration-300 cursor-pointer backdrop-blur-sm hover:scale-105 ${
-                      index % 2 === 0
-                        ? "animate-float"
-                        : "animate-float-delayed"
-                    }`}
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
-                    <span className="text-white/90 font-semibold text-sm">
-                      {tech}
-                    </span>
-                  </div>
-                ))}
+                {["React", "Node.js", "MongoDB", "Express", "JavaScript"].map(
+                  (tech, index) => (
+                    <div
+                      key={tech}
+                      className={`group flex items-center gap-3 px-5 py-3 bg-white/5 border border-white/20 rounded-2xl hover:bg-white/10 transition-all duration-300 cursor-pointer backdrop-blur-sm hover:scale-105 ${
+                        index % 2 === 0
+                          ? "animate-float"
+                          : "animate-float-delayed"
+                      }`}
+                      style={{ animationDelay: `${index * 0.2}s` }}
+                    >
+                      <span className="text-white/90 font-semibold text-sm">
+                        {tech}
+                      </span>
+                    </div>
+                  )
+                )}
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 pt-8">
-                <button onClick={downloadResume} className="group relative px-8 py-4 bg-white text-black font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-white/20 overflow-hidden">
+                <button
+                  onClick={downloadResume}
+                  className="group relative px-8 py-4 bg-white text-black font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-white/20 overflow-hidden"
+                >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <span className="relative flex items-center gap-3">
                     <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform" />
@@ -392,7 +389,10 @@ function HeroSection({ isLoaded }) {
                   </span>
                 </button>
 
-                <button onClick={scrollToContact} className="group relative px-8 py-4 bg-white text-black font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-white/20 overflow-hidden">
+                <button
+                  onClick={scrollToContact}
+                  className="group relative px-8 py-4 bg-white text-black font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-white/20 overflow-hidden"
+                >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <span className="relative flex items-center gap-3">
                     <Coffee className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -403,32 +403,31 @@ function HeroSection({ isLoaded }) {
 
               {/* Social Links */}
               <div className="flex gap-4 pt-6">
-  {[
-    { 
-      icon: Github,
-      label: "GitHub",
-      color: "hover:bg-gray-800",
-      url: "https://github.com/Dhuvesh" // Replace with your GitHub URL
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      color: "hover:bg-blue-600",
-      url: "https://www.linkedin.com/in/dhuveshsalian/" // Replace with your LinkedIn URL
-    },
-    
-  ].map((social, index) => (
-    <a
-      key={social.label}
-      href={social.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`group p-4 border border-white/20 rounded-2xl hover:bg-white/5 transition-all duration-300 hover:scale-110 hover:border-white/40 backdrop-blur-sm ${social.color} inline-block`}
-    >
-      <social.icon className="w-6 h-6 text-white/60 group-hover:scale-110 transition-transform group-hover:text-white" />
-    </a>
-  ))}
-</div>
+                {[
+                  {
+                    icon: Github,
+                    label: "GitHub",
+                    color: "hover:bg-gray-800",
+                    url: "https://github.com/Dhuvesh", // Replace with your GitHub URL
+                  },
+                  {
+                    icon: Linkedin,
+                    label: "LinkedIn",
+                    color: "hover:bg-blue-600",
+                    url: "https://www.linkedin.com/in/dhuveshsalian/", // Replace with your LinkedIn URL
+                  },
+                ].map((social, index) => (
+                  <a
+                    key={social.label}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`group p-4 border border-white/20 rounded-2xl hover:bg-white/5 transition-all duration-300 hover:scale-110 hover:border-white/40 backdrop-blur-sm ${social.color} inline-block`}
+                  >
+                    <social.icon className="w-6 h-6 text-white/60 group-hover:scale-110 transition-transform group-hover:text-white" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -885,37 +884,45 @@ function ProjectsSection() {
       date: "Oct 2024",
     },
     {
-  title: "InterWin",
-  subtitle: "Job & Internship Platform",
+      title: "InterWin",
+      subtitle: "Job & Internship Platform",
+      description:
+        "A comprehensive platform connecting users with personalized job and internship opportunities, featuring expert video calls, 24/7 AI-powered chatbot, real-time interview preparation tools, and robust admin panel for seamless opportunity management.",
+      tech: [
+        "React",
+        "TailwindCSS",
+        "Express.js",
+        "MongoDB Atlas",
+        "Gegocloud",
+        "Python",
+        "Flask",
+      ],
+      features: [
+        "Expert Video Calls",
+        "24/7 AI Chatbot",
+        "Interview Preparation",
+        "Admin Panel",
+      ],
+      status: "Development",
+      category: "Career Platform",
+      date: "Sep-Oct 2024",
+    },
+    {
+  title: "Chat App",
+  subtitle: "Real-Time Communication Platform",
   description:
-    "A comprehensive platform connecting users with personalized job and internship opportunities, featuring expert video calls, 24/7 AI-powered chatbot, real-time interview preparation tools, and robust admin panel for seamless opportunity management.",
-  tech: ["React", "TailwindCSS", "Express.js", "MongoDB Atlas", "Gegocloud", "Python", "Flask"],
+    "A comprehensive chat application featuring real-time messaging, group chats, multiple themes, and robust authentication. Built with responsive design for seamless user experience across all devices.",
+  tech: ["React.js", "Tailwind CSS", "Daisy UI", "Express.js", "MongoDB Atlas", "Zustand", "Socket.io", "Cloudinary"],
   features: [
-    "Expert Video Calls",
-    "24/7 AI Chatbot",
-    "Interview Preparation",
-    "Admin Panel",
+    "Real-Time Messaging",
+    "Group Chats",
+    "Multiple Themes",
+    "JWT Authentication",
   ],
   status: "Development",
-  category: "Career Platform",
-  date: "Sep-Oct 2024",
+  category: "Communication",
+  date: "Dec 2024",
 },
-    {
-      title: "Task Manager Pro",
-      subtitle: "Project Management Tool",
-      description:
-        "Advanced task management application with team collaboration features, real-time updates, file sharing, and progress analytics for better project tracking.",
-      tech: ["React", "Node.js", "Socket.io", "MongoDB", "Chart.js", "Multer"],
-      features: [
-        "Team Collaboration",
-        "Real-time Updates",
-        "File Sharing",
-        "Analytics",
-      ],
-      status: "Planning",
-      category: "Productivity",
-      date: "Jan 2025",
-    },
     {
       title: "Weather Dashboard",
       subtitle: "Real-time Weather App",
@@ -1217,7 +1224,7 @@ function SkillsSection() {
       color: "from-blue-500/20 to-blue-600/20 border-blue-500/40",
       skills: [
         { name: "JavaScript", level: 90, icon: "🟨" },
-        
+
         { name: "C++", level: 80, icon: "⚡" },
         { name: "HTML5", level: 95, icon: "🧡" },
         { name: "CSS3", level: 90, icon: "💙" },
