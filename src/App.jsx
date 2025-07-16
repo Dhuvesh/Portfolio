@@ -985,7 +985,7 @@ function ProjectsSection() {
   ],
   status: "Development",
   category: "E-Commerce",
-  date: "202",
+  date: "2024",
 },
   ];
 
