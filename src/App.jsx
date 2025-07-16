@@ -981,7 +981,7 @@ function ProjectsSection() {
         "Responsive Design",
         "Visual Experience",
         "Performance Optimized",
-        "Brand ",
+        "Brand Experience",
       ],
       status: "Development",
       category: "E-Commerce",
