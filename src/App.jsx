@@ -980,7 +980,7 @@ function ProjectsSection() {
       features: [
         "Responsive Design",
         "Visual Experience",
-        "Performance Optimized",
+        
         "Brand Experience",
       ],
       status: "Development",
