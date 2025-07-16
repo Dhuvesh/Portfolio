@@ -885,21 +885,21 @@ function ProjectsSection() {
       date: "Oct 2024",
     },
     {
-      title: "E-Commerce Store",
-      subtitle: "Full-Stack Shopping Platform",
-      description:
-        "Complete e-commerce solution with user authentication, product catalog, shopping cart, payment integration, and admin dashboard for inventory management.",
-      tech: ["React", "Node.js", "MongoDB", "Express", "Stripe", "JWT"],
-      features: [
-        "User Auth",
-        "Payment Gateway",
-        "Admin Panel",
-        "Inventory Management",
-      ],
-      status: "Development",
-      category: "E-Commerce",
-      date: "Nov 2024",
-    },
+  title: "InterWin",
+  subtitle: "Job & Internship Platform",
+  description:
+    "A comprehensive platform connecting users with personalized job and internship opportunities, featuring expert video calls, 24/7 AI-powered chatbot, real-time interview preparation tools, and robust admin panel for seamless opportunity management.",
+  tech: ["React", "TailwindCSS", "Express.js", "MongoDB Atlas", "Gegocloud", "Python", "Flask"],
+  features: [
+    "Expert Video Calls",
+    "24/7 AI Chatbot",
+    "Interview Preparation",
+    "Admin Panel",
+  ],
+  status: "Development",
+  category: "Career Platform",
+  date: "Sep-Oct 2024",
+},
     {
       title: "Task Manager Pro",
       subtitle: "Project Management Tool",
