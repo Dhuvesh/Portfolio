@@ -972,21 +972,21 @@ function ProjectsSection() {
       date: "Jan 2025",
     },
     {
-  title: "Nike React App",
-  subtitle: "Dynamic E-Commerce Website",
-  description:
-    "A visually stunning Nike-inspired website built with React and Tailwind CSS. Features responsive design, personalized user experience, and performance optimization that reflects the brand's commitment to innovation and excellence.",
-  tech: ["React", "Tailwind CSS"],
-  features: [
-    "Responsive Design",
-    "Visual Experience",
-    "Performance Optimized",
-    "Brand Experience",
-  ],
-  status: "Development",
-  category: "E-Commerce",
-  date: "2023",
-},
+      title: "Nike React App",
+      subtitle: "Dynamic E-Commerce Website",
+      description:
+        "A visually stunning Nike-inspired website built with React and Tailwind CSS. Features responsive design, personalized user experience, and performance optimization that reflects the brand's commitment to innovation",
+      tech: ["React", "Tailwind CSS"],
+      features: [
+        "Responsive Design",
+        "Visual Experience",
+        "Performance Optimized",
+        "Brand Experience",
+      ],
+      status: "Development",
+      category: "E-Commerce",
+      date: "2023",
+    },
   ];
 
   return (
