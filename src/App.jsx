@@ -979,7 +979,7 @@ function ProjectsSection() {
       tech: ["React", "Tailwind CSS"],
       features: [
         "Responsive Design",
-        "Visual",
+        "Visual Experience",
         "Performance Optimized",
         "Brand Experience",
       ],
