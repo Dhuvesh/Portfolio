@@ -999,7 +999,7 @@ function ProjectsSection() {
         {/* Section Header */}
         <div
           className={`text-center mb-20 space-y-6 ${
-            isVisible ? "animate-slide-up" : "opacity-40"
+            isVisible ? "animate-slide-up" : "opacity-0"
           }`}
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/20 rounded-full backdrop-blur-sm">
