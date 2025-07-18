@@ -1010,7 +1010,7 @@ function ProjectsSection() {
           </div>
           <h2 className="text-5xl lg:text-6xl font-black leading-tight">
             <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-              Projects 
+              Projects That
             </span>
             <br />
             <span className="bg-gradient-to-r from-gray-300 to-white bg-clip-text text-transparent font-serif italic">
